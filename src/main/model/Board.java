@@ -62,7 +62,7 @@ public class Board {
     }
 
     public boolean gameIsFinished() {
-        return hasErros() && getStatus().equals(COMPLETE);
+        return !hasErros() && getStatus().equals(COMPLETE);
     }
 
 }
